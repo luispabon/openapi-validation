@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace AuronConsulting\OpenApi\Validator;
 
-use AuronConsulting\OpenApi\Schema\SchemaInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 /**
@@ -17,9 +16,9 @@ interface RequestValidatorInterface
      * Validates an incoming request against the specified schema.
      *
      * @param ServerRequestInterface $request
-     * @param SchemaInterface        $schema
+     * @param SpecInterface          $spec
      *
      * @throws Exception\ValidatorExceptionInterface
      */
-    public function validateRequest(ServerRequestInterface $request, SchemaInterface $schema): void;
+    public function validateRequest(ServerRequestInterface $request, SpecInterface $spec): void;
 }

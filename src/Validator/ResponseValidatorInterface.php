@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace AuronConsulting\OpenApi\Validator;
 
-use AuronConsulting\OpenApi\Schema\SchemaInterface;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -17,9 +16,9 @@ interface ResponseValidatorInterface
      * Response validator. Must throw exceptions below if validation fails.
      *
      * @param ResponseInterface $response
-     * @param SchemaInterface   $schema
+     * @param SpecInterface     $schema
      *
      * @throws Exception\ValidatorExceptionInterface
      */
-    public function validateResponse(ResponseInterface $response, SchemaInterface $schema): void;
+    public function validateResponse(ResponseInterface $response, SpecInterface $schema): void;
 }
