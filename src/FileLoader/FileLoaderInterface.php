@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace AuronConsulting\OpenApi\Validator\FileLoader;
+namespace AuronConsulting\OpenApi\Validation\FileLoader;
 
 /**
  * Defines an interface for loading spec files.
@@ -17,6 +17,7 @@ interface FileLoaderInterface
      * @param string $specLocation
      *
      * @return array
+     * @throws Exception\FileLoaderException
      */
     public function load(string $specLocation): array;
 }

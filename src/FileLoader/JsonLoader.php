@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace AuronConsulting\OpenApi\Validation\FileLoader;
 
-use AuronConsulting\OpenApi\Validator\FileLoader\FileLoaderInterface;
+use AuronConsulting\OpenApi\Validation\FileLoader\FileLoaderInterface;
 
 /**
  * Loads a json file and returns as an array.
