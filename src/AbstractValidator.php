@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace AuronConsulting\OpenApi\Validator;
+namespace AuronConsulting\OpenApi\Validation;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\UriInterface;

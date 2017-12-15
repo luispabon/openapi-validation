@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace AuronConsulting\OpenApi\Validator;
+namespace AuronConsulting\OpenApi\Validation;
 
 /**
  * Describes a validation error.

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace AuronConsulting\OpenApi\Validator\OpenApi2;
+namespace AuronConsulting\OpenApi\Validation\OpenApi2;
 
-use AuronConsulting\OpenApi\Validator\AbstractValidator;
-use AuronConsulting\OpenApi\Validator\RequestValidatorInterface;
-use AuronConsulting\OpenApi\Validator\ResponseValidatorInterface;
-use AuronConsulting\OpenApi\Validator\SpecInterface;
+use AuronConsulting\OpenApi\Validation\AbstractValidator;
+use AuronConsulting\OpenApi\Validation\RequestValidatorInterface;
+use AuronConsulting\OpenApi\Validation\ResponseValidatorInterface;
+use AuronConsulting\OpenApi\Validation\SpecInterface;
 use JsonSchema\Validator as JsonSchemaValidator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

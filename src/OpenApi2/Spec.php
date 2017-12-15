@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace AuronConsulting\OpenApi\Validator\OpenApi2;
+namespace AuronConsulting\OpenApi\Validation\OpenApi2;
 
 use AuronConsulting\OpenApi\Spec\OpenApi2\ConsumesChain;
 use AuronConsulting\OpenApi\Spec\OpenApi2\Definitions;

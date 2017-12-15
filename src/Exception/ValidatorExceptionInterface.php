@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace AuronConsulting\OpenApi\Validator\Exception;
+namespace AuronConsulting\OpenApi\Validation\Exception;
 
-use AuronConsulting\OpenApi\Validator\ErrorCollection;
+use AuronConsulting\OpenApi\Validation\ErrorCollection;
 
 /**
  * Tags our validation exceptions.

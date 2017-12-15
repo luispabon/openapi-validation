@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace AuronConsulting\OpenApi\Validator;
+namespace AuronConsulting\OpenApi\Validation;
 
 /**
  * Collection of errors thrown during validation.
