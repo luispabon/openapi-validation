@@ -27,13 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "AuronConsulting\\OpenApi\\": "src/"
+            "AuronConsulting\\OpenApi\\Validation\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AuronConsulting\\OpenApi\\Tests\\Unit\\": "tests/unit/",
-            "AuronConsulting\\OpenApi\\Tests\\Functional\\": "tests/functional/"
+            "AuronConsulting\\OpenApi\\Validation\\Tests\\Unit\\": "tests/unit/",
+            "AuronConsulting\\OpenApi\\Validation\\Tests\\Functional\\": "tests/functional/"
         }
     }
 }
