@@ -109,23 +109,38 @@ class Spec
      * @param Tag[]                      $tags
      * @param ExternalDocumentation|null $externalDocs
      */
-    public function __construct($swagger, Info $info, $host, $basePath, array $schemes, ConsumesChain $consumes, ProducesChain $produces, Paths $paths, Definitions $definitions, ParametersDefinitions $parameters, ResponsesDefinitions $responses, SecurityDefinitions $securityDefinitions, array $security, array $tags, ExternalDocumentation $externalDocs = null)
-    {
-        $this->swagger = $swagger;
-        $this->info = $info;
-        $this->host = $host;
-        $this->basePath = $basePath;
-        $this->schemes = $schemes;
-        $this->consumes = $consumes;
-        $this->produces = $produces;
-        $this->paths = $paths;
-        $this->definitions = $definitions;
-        $this->parameters = $parameters;
-        $this->responses = $responses;
+    public function __construct(
+        $swagger,
+        Info $info,
+        $host,
+        $basePath,
+        array $schemes,
+        ConsumesChain $consumes,
+        ProducesChain $produces,
+        Paths $paths,
+        Definitions $definitions,
+        ParametersDefinitions $parameters,
+        ResponsesDefinitions $responses,
+        SecurityDefinitions $securityDefinitions,
+        array $security,
+        array $tags,
+        ExternalDocumentation $externalDocs = null
+    ) {
+        $this->swagger             = $swagger;
+        $this->info                = $info;
+        $this->host                = $host;
+        $this->basePath            = $basePath;
+        $this->schemes             = $schemes;
+        $this->consumes            = $consumes;
+        $this->produces            = $produces;
+        $this->paths               = $paths;
+        $this->definitions         = $definitions;
+        $this->parameters          = $parameters;
+        $this->responses           = $responses;
         $this->securityDefinitions = $securityDefinitions;
-        $this->security = $security;
-        $this->tags = $tags;
-        $this->externalDocs = $externalDocs;
+        $this->security            = $security;
+        $this->tags                = $tags;
+        $this->externalDocs        = $externalDocs;
     }
 
     /**

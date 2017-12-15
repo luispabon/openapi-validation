@@ -8,7 +8,8 @@ use Psr\Http\Message\ServerRequestInterface;
 /**
  * Request validator interface.
  *
- * @package AuronConsulting\OpenApi\Validator
+ * @author  Luis Pabon / https://github.com/AuronConsulting
+ * @license MIT
  */
 interface RequestValidatorInterface
 {

@@ -14,7 +14,8 @@ use Psr\Http\Message\ServerRequestInterface;
 /**
  * OpenApi v2 (Swagger) validator implemented with Justin Rainbow JSON Schema's lib.
  *
- * @package AuronConsulting\OpenApi\Validator\OpenApi2
+ * @author  Luis Pabon / https://github.com/AuronConsulting
+ * @license MIT
  */
 class JustinRainbowValidator extends AbstractValidator implements RequestValidatorInterface, ResponseValidatorInterface
 {

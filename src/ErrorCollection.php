@@ -6,7 +6,8 @@ namespace AuronConsulting\OpenApi\Validator;
 /**
  * Collection of errors thrown during validation.
  *
- * @package AuronConsulting\OpenApi\Validator
+ * @author  Luis Pabon / https://github.com/AuronConsulting
+ * @license MIT
  */
 class ErrorCollection implements \ArrayAccess, \IteratorAggregate, \Countable
 {

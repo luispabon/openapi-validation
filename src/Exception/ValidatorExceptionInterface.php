@@ -8,7 +8,8 @@ use AuronConsulting\OpenApi\Validator\ErrorCollection;
 /**
  * Tags our validation exceptions.
  *
- * @package AuronConsulting\OpenApi\Validator\Exception
+ * @author  Luis Pabon / https://github.com/AuronConsulting
+ * @license MIT
  */
 interface ValidatorExceptionInterface
 {

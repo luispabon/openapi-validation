@@ -9,7 +9,8 @@ use Psr\Http\Message\UriInterface;
 /**
  * Contains common logic to the validators we include. You do not need to extend from here if you implement your own.
  *
- * @package AuronConsulting\OpenApi\Validator
+ * @author  Luis Pabon / https://github.com/AuronConsulting
+ * @license MIT
  */
 abstract class AbstractValidator
 {
@@ -24,7 +25,6 @@ abstract class AbstractValidator
     {
 
     }
-
 
     protected function validateRequestParameters(UriInterface $uri): void
     {

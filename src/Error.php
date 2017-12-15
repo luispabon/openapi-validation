@@ -6,7 +6,8 @@ namespace AuronConsulting\OpenApi\Validator;
 /**
  * Describes a validation error.
  *
- * @package AuronConsulting\OpenApi\Validator
+ * @author  Luis Pabon / https://github.com/AuronConsulting
+ * @license MIT
  */
 class Error
 {

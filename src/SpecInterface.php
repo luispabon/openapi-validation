@@ -6,7 +6,8 @@ namespace AuronConsulting\OpenApi\Validator;
 /**
  * @todo
  *
- * @package AuronConsulting\OpenApi\Spec
+ * @author  Luis Pabon / https://github.com/AuronConsulting
+ * @license MIT
  */
 interface SpecInterface
 {
