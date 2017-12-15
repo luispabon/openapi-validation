@@ -1,5 +1,5 @@
 {
-    "name": "luispabon/openapi-validation",
+    "name": "auron-consulting/openapi-validation",
     "description": "PSR-7 and 15 request/response validation off OpenApi v2/3 specs",
     "type": "library",
     "license": "MIT",
