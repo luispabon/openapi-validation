@@ -1,0 +1,14 @@
+{
+    "name": "luispabon/openapi-validation",
+    "description": "PSR-7 and 15 request/response validation off OpenApi v2/3 specs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luis Pabon",
+            "email": "luis.pabon@auronconsulting.co.uk"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
