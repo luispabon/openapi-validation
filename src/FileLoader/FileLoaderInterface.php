@@ -18,6 +18,7 @@ interface FileLoaderInterface
      *
      * @return array
      * @throws Exception\FileLoaderException
+     * @throws Exception\InvalidFormatException
      */
     public function load(string $specLocation): array;
 }

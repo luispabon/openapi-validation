@@ -17,6 +17,7 @@ abstract class AbstractLoader implements FileLoaderInterface
      * @param string $contents
      *
      * @return array
+     * @throws Exception\InvalidFormatException
      */
     abstract protected function doLoad(string $contents): array;
 

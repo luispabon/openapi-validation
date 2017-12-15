@@ -3,23 +3,30 @@ declare(strict_types=1);
 
 namespace AuronConsulting\OpenApi\Validation\FileLoader;
 
-use AuronConsulting\OpenApi\Validation\FileLoader\FileLoaderInterface;
-
 /**
  * Loads a json file and returns as an array.
  *
  * @author  Luis Pabon / https://github.com/AuronConsulting
  * @license MIT
  */
-class JsonLoader implements FileLoaderInterface
+class JsonLoader extends AbstractLoader implements FileLoaderInterface
 {
     /**
-     * @inheritdoc
+     * This must take the contents of the spec file as a string and parses it into an associative array..
+     *
+     * @param string $contents
+     *
+     * @return array
+     * @throws Exception\InvalidFormatException
      */
-    public function load(string $specLocation): array
+    protected function doLoad(string $contents): array
     {
-        if (\is_file($specLocation) === false) {
+        $data = \json_decode($contents, true);
 
+        if (\is_array($data) === false || count($data) === 0) {
+            throw new Exception\InvalidFormatException('File was not in JSON format');
         }
+
+        return $data;
     }
 }
