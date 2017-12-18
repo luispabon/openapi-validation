@@ -67,10 +67,6 @@ class Factory
         $cache = null,
         Parser $symfonyYaml = null
     ): Spec {
-        if (\is_file($specLocation) === false) {
-            throw new FileLoaderException(\sprintf('Spec not found at %s', $specLocation));
-        }
-
         // Decide on which format based on filename.
         if (\preg_match('/(yaml|yml)$/i', $specLocation) === 1) {
             if ($symfonyYaml === null) {
