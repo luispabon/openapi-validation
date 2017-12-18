@@ -7,7 +7,6 @@ use AuronConsulting\OpenApi\Validation\AbstractValidator;
 use AuronConsulting\OpenApi\Validation\RequestValidatorInterface;
 use AuronConsulting\OpenApi\Validation\ResponseValidatorInterface;
 use AuronConsulting\OpenApi\Validation\SpecInterface;
-use JsonSchema\Validator as JsonSchemaValidator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -17,18 +16,8 @@ use Psr\Http\Message\ServerRequestInterface;
  * @author  Luis Pabon / https://github.com/AuronConsulting
  * @license MIT
  */
-class JustinRainbowValidator extends AbstractValidator implements RequestValidatorInterface, ResponseValidatorInterface
+class Validator extends AbstractValidator implements RequestValidatorInterface, ResponseValidatorInterface
 {
-    /**
-     * @var JsonSchemaValidator
-     */
-    private $jsonSchemaValidator;
-
-    public function __construct(JsonSchemaValidator $jsonSchemaValidator)
-    {
-        $this->jsonSchemaValidator = $jsonSchemaValidator;
-    }
-
     /**
      * @inheritdoc
      */
@@ -44,4 +33,5 @@ class JustinRainbowValidator extends AbstractValidator implements RequestValidat
     {
         // TODO: Implement validateResponse() method.
     }
+
 }

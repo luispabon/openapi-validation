@@ -3,8 +3,11 @@ declare(strict_types=1);
 
 namespace AuronConsulting\OpenApi\Validation;
 
+use JsonSchema\Validator as JsonSchemaValidator;
 use Psr\Http\Message\MessageInterface;
+use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
+use Symfony\Component\Validator\Validator\ValidatorInterface as SymfonyValidator;
 
 /**
  * Contains common logic to the validators we include. You do not need to extend from here if you implement your own.
@@ -14,6 +17,22 @@ use Psr\Http\Message\UriInterface;
  */
 abstract class AbstractValidator
 {
+    /**
+     * @var JsonSchemaValidator
+     */
+    private $jsonSchemaValidator;
+
+    /**
+     * @var SymfonyValidator
+     */
+    private $symfonyValidator;
+
+    public function __construct(JsonSchemaValidator $jsonSchemaValidator, SymfonyValidator $validator)
+    {
+        $this->jsonSchemaValidator = $jsonSchemaValidator;
+        $this->symfonyValidator    = $validator;
+    }
+
     /**
      * Validates
      *
@@ -27,6 +46,11 @@ abstract class AbstractValidator
     }
 
     protected function validateRequestParameters(UriInterface $uri): void
+    {
+
+    }
+
+    protected function validateBody(StreamInterface $body, BodySpec $spec): void
     {
 
     }
