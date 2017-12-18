@@ -8,12 +8,12 @@ use Psr\SimpleCache\CacheInterface;
 /**
  * This implements a cached file loader, as parsing specs can be rather resource intensive.
  *
- * You must provide with a PSR-16 implementation, and one of the actual file loaders.
+ * You must provide with a PSR-16 implementation (psr/simple-cache), and one of the actual file loaders.
  *
  * @author  Luis Pabon / https://github.com/AuronConsulting
  * @license MIT
  */
-class CachedLoader implements FileLoaderInterface
+class SimpleCacheLoader implements FileLoaderInterface
 {
     /**
      * @var CacheInterface
