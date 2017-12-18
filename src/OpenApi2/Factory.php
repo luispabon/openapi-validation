@@ -62,11 +62,8 @@ class Factory
      * @return Spec
      * @throws FileLoaderException
      */
-    public static function getSpec(
-        string $specLocation,
-        $cache = null,
-        Parser $symfonyYaml = null
-    ): Spec {
+    public static function getSpec(string $specLocation, $cache = null, Parser $symfonyYaml = null): Spec
+    {
         // Decide on which format based on filename.
         if (\preg_match('/(yaml|yml)$/i', $specLocation) === 1) {
             if ($symfonyYaml === null) {
